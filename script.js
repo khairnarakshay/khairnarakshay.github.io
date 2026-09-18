@@ -1,45 +1,86 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Update the current year in the footer
-    const currentYearElement = document.getElementById("currentYear");
+    /*
+     * Update current year in footer
+     */
+    const currentYearElement =
+        document.getElementById("currentYear");
 
     if (currentYearElement) {
-        currentYearElement.textContent = new Date().getFullYear();
+        currentYearElement.textContent =
+            new Date().getFullYear();
     }
 
-    // Automatically close the mobile navbar after clicking a link
-    const navbarLinks = document.querySelectorAll(".navbar-nav .nav-link");
-    const navbarCollapse = document.querySelector(".navbar-collapse");
+    /*
+     * Mobile navbar close functionality
+     */
+    const navbarCollapseElement =
+        document.getElementById("navbarContent");
+
+    const navbarLinks =
+        document.querySelectorAll("#navbarContent .nav-link");
 
     navbarLinks.forEach(function (link) {
         link.addEventListener("click", function () {
             if (
-                navbarCollapse &&
-                navbarCollapse.classList.contains("show")
+                navbarCollapseElement &&
+                navbarCollapseElement.classList.contains("show")
             ) {
-                const bootstrapCollapse =
-                    bootstrap.Collapse.getInstance(navbarCollapse);
+                const collapseInstance =
+                    bootstrap.Collapse.getInstance(
+                        navbarCollapseElement
+                    );
 
-                if (bootstrapCollapse) {
-                    bootstrapCollapse.hide();
+                if (collapseInstance) {
+                    collapseInstance.hide();
                 } else {
-                    new bootstrap.Collapse(navbarCollapse).hide();
+                    new bootstrap.Collapse(
+                        navbarCollapseElement
+                    ).hide();
                 }
             }
         });
     });
 
-    // Smooth scrolling for internal page links
-    const internalLinks = document.querySelectorAll('a[href^="#"]');
+    /*
+     * Back to top button
+     */
+    const backToTopButton =
+        document.getElementById("backToTop");
+
+    if (backToTopButton) {
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 500) {
+                backToTopButton.style.display = "flex";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        });
+
+        backToTopButton.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    }
+
+    /*
+     * Smooth scrolling for internal links
+     */
+    const internalLinks =
+        document.querySelectorAll('a[href^="#"]');
 
     internalLinks.forEach(function (link) {
         link.addEventListener("click", function (event) {
-            const targetId = this.getAttribute("href");
+            const targetId =
+                this.getAttribute("href");
 
             if (!targetId || targetId === "#") {
                 return;
             }
 
-            const targetElement = document.querySelector(targetId);
+            const targetElement =
+                document.querySelector(targetId);
 
             if (targetElement) {
                 event.preventDefault();
