@@ -1,285 +1,125 @@
-body{
-
+body {
+    background: #0b1120;
+    color: #e2e8f0;
+    font-family: "Segoe UI", Arial, sans-serif;
 }
 
-*{
-	margin: 0px;
-	padding:0;
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
 }
 
-.text-align{
-	text-align: center;
+.navbar {
+    background: rgba(11, 17, 32, 0.96);
 }
 
-#header-body{
-	height:65vh;
-	background-image: url("background.jpg");
-	background-size: cover;
-	background-position: center;
-	background-attachment:fixed;
-	margin: 20px;
-    	
-
+.hero-section {
+    min-height: 100vh;
+    padding: 150px 0 90px;
+    display: flex;
+    align-items: center;
+    background: radial-gradient(circle at 85% 20%, rgba(14, 165, 233, .13), transparent 35%);
 }
 
-/*class for all horizontal ul*/
-.horizontal-list ul{
-	list-style: none;
-
+.section-dark {
+    background: #0f172a;
 }
 
-/*class for all horizontal li*/
-.horizontal-list li{
-	
-	font-size: 20px;
-	display:inline-block;
-	margin:30px;
-	
-    
-
-}
-.nave li{
-	border-block: 1px solid black;
-	
-}
-/*class for all horizontal ul*/
-.horizontal-list  li a,a{
-	text-decoration: none;
-	color:white;
-	
+.section-heading span {
+    color: #38bdf8;
+    font-size: .85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
 }
 
-/*class nav horizontal li*/
-.horizontal-list li a:hover{
-	color:red;
-	transition: color 0.9s;
-	margin:0px;
+.section-heading h2 {
+    margin-top: 12px;
+    font-weight: 700;
 }
 
-
-#name-social-container{
-	margin-top: 10vh;
+.text-primary {
+    color: #38bdf8 !important;
 }
 
-#my-name{
-	font-size: 3rem;
-	letter-spacing: 0.1rem;
-	color:white;
-	font-weight: 700;
-	margin-bottom: 0.5rem;
+.btn-primary {
+    background: #38bdf8;
+    border-color: #38bdf8;
+    color: #082f49;
+    font-weight: 600;
 }
 
-.social-icon li a i{
-	padding: 10px;
-	font-size: 3rem;
-  border-radius: 50%;
+.btn-primary:hover {
+    background: #7dd3fc;
+    border-color: #7dd3fc;
+    color: #082f49;
 }
 
-.social-icon li a i:hover{
-	box-shadow: 10px 0px 10px 2px yellow;
+.card {
+    background: #111c30;
+    border-color: #24334d;
+    color: #e2e8f0;
 }
 
-
-/*Profile image*/
-/*About section*/
-#image{
-	height: 12rem;
-	width:12rem;
-	margin: auto;    /*image top bottomm at center*/
-	margin-top: -15vh;
-
+.project-card {
+    transition: transform .2s ease, border-color .2s ease;
 }
 
-#image img	{
-	height: 100%;
-	width: 100%;
-	border-radius: 50%;
-	border:3px solid white;
-
-}
-#about p{
-	height:auto;
-	width:auto;
-	margin:30px 60px;
-	padding: 20px;
-	font-size: 2rem;
-    
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
 }
 
-#about p b{
-	color:#23a2eb;
-	
+.project-icon {
+    color: #38bdf8;
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
-/*skill section*/
-#skill{
-	height:50vh;
-	width:auto;
-	background-color: #e8eded;
-	margin: 20px;
+pre {
+    color: #cbd5e1;
+    white-space: pre-wrap;
 }
 
-.section-heading{
-	padding: 40px;
-	color:rgb(3,136,252);
-	word-spacing: 30px;
-	letter-spacing: 1px;
-	font-size: 2rem;
+.code-purple {
+    color: #c084fc;
 }
 
-/*--------------------------------*/
-#skill-display {
-    margin-bottom: 30px;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-evenly;
+.code-yellow {
+    color: #facc15;
 }
 
-
-.container {
-  width: 200px;
-  background-color: #c4c8cf;
-  margin: 20px;
-  border-radius: 30px;
-  box-shadow: 5px 5px 10px grey inset;;
-
+.code-green {
+    color: #86efac;
 }
 
-.skills {
-
-  text-align:center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: white;
-  border-radius: 30px 0px 0px 30px;
+.contact-text {
+    max-width: 650px;
 }
 
-.html {width: 85%; background-color: #04AA6D;}
-.css {width: 70%; background-color: #2196F3;}
-.js {width: 65%; background-color: #f44336;}
-.php {width: 50%; background-color: #eb9123;}
-.java {width: 60%; background-color: #518081;}
-
-#skill-name span{
-	 color: white;
-    font-size: 1rem;
-    margin-left: 10px;
-    vertical-align: center;
-}
-	
-
-/*--------------------------------*/
-
-#educatio{
-	height:auto;
-	width:auto;
-	background-color: white;
-	margin-top: 40px;
+a {
+    color: #38bdf8;
 }
 
-.course-detials{
-	height: auto;
-	width:auto;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin: 20px;
-	padding: 50px;
-	padding-bottom: 30px;
-
-}
-.course-detials div{
- height: 450px;	
- width:400px;
- margin: 20px;
- border-radius: 2%;
-background-image: linear-gradient(to top right, rgba(85, 50, 168,2), rgba(168, 50, 160,10));
+a:hover {
+    color: #7dd3fc;
 }
 
-/*mouse over education*/
-.course-detials div:hover{
-box-shadow: 10px 0px 20px black;
+@media (max-width: 991px) {
+    .hero-section {
+        padding-top: 130px;
+    }
 
-
-}
-.course-detials div h1,font-size{
- font-size: 2rem;
- text-align: center;
- padding: 10px;
- color:white;
- text-decoration: underline #ebe823;
+    .hero-section h1 {
+        font-size: 2.8rem;
+    }
 }
 
-.course-detials span h3{
-	margin: 30px;
-	font-size: 1.7rem;
-	color: #eb9123;
-	text-align: center;
-	
-}
-.course-detials span p{
-	color:white;
-	text-align: center;
-	font-size: 1.5rem;
-}
-  
+@media (max-width: 575px) {
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
 
-  /*--------------------------------*/
-
-
-#contact{
-	height:70vh;
-	width: auto;
-	background-image:linear-gradient(to right, rgba(67, 80, 156,2), rgba(102, 67, 145,10));;
-	margin: 20px;
-	margin-bottom: 20px;
-	color: white;
-
-}
-
-
-#section{
-	display: flex;
-	flex-wrap: wrap;
-	margin: 20px;
-}
-
-#left-section{
-	width:40%;
-	font-size: 1.5rem;
-	text-decoration: underline;
-	text-underline-offset:6px ;
-	word-spacing: 3px;
-	word-wrap:wrap;
-	line-height: 3;
-	margin-left: 100px;
-}
-
-
-
-
-	.button{
-	height:2rem;width:auto;
-	width:auto;
-	padding: 5px;
-	cursor: pointer;
-	background-color: #42bcf5;
-	border-radius: 8px;
-}
-
-#right-section{	
-	border-left: 4px solid white;
-  height: 230px;
-  padding: 20px;
-  line-height: 1.5;
-}
-
-#right-section p{
-	font-size: 1.2rem;
-	word-spacing: 5px;
-	font-family: Sans-serif;
-	
-}
-.footer{
-	margin-left: 450px;
+    .hero-section h2 {
+        font-size: 1.25rem;
+    }
 }
