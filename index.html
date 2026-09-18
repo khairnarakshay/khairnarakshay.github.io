@@ -3,378 +3,505 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Akshay Khairnar - Python Backend Developer specializing in Django, REST APIs, FastAPI, fintech, and AI/ML.">
-    <meta name="author" content="Akshay Khairnar">
-    <title>Akshay Khairnar | Python Backend Developer</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <title>Akshay Khairnar | Python Backend Developer</title>
+    <meta
+        name="description"
+        content="Akshay Khairnar is a Python Backend Developer specializing in Django, FastAPI, REST APIs, PostgreSQL, fintech applications, and AI-powered solutions."
+    >
+    <meta name="author" content="Akshay Khairnar">
+
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        rel="stylesheet"
+    >
+
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top border-bottom">
-    <div class="container">
-        <a class="navbar-brand fw-bold fs-3" href="#home">AK<span class="text-primary">.</span></a>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="90" tabindex="0">
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <!-- Navigation -->
+    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">AK<span class="text-primary">.</span></a>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto align-items-lg-center">
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
-                    <a href="#contact" class="btn btn-primary btn-sm px-3">Let's Connect <i class="bi bi-arrow-up-right"></i></a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarContent"
+                aria-controls="navbarContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-<header id="home" class="hero-section">
-    <div class="container">
-        <div class="row align-items-center g-5">
-            <div class="col-lg-8">
-                <p class="text-primary fw-semibold mb-3">
-                    <i class="bi bi-code-slash"></i> PYTHON BACKEND DEVELOPER
-                </p>
-                <h1 class="display-3 fw-bold mb-3">
-                    Hi, I'm <span class="text-primary">Akshay Khairnar</span>
-                </h1>
-                <h2 class="h3 text-light-emphasis mb-4">Building backend systems, APIs & fintech solutions.</h2>
-                <p class="lead text-secondary mb-4">
-                    Python Backend Developer specializing in Django, Django REST Framework,
-                    FastAPI, PostgreSQL, fintech integrations, and AI-powered applications.
-                </p>
-
-                <div class="d-flex flex-wrap gap-3">
-                    <a href="#projects" class="btn btn-primary btn-lg">View My Projects <i class="bi bi-arrow-right"></i></a>
-                    <a href="#contact" class="btn btn-outline-light btn-lg">Contact Me <i class="bi bi-envelope"></i></a>
-                </div>
-
-                <div class="d-flex gap-4 mt-4 fs-4">
-                    <a href="https://github.com/khairnarakshay" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                        <i class="bi bi-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/akshaykhairnar-backend-developer/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                    <a href="mailto:khairnarakshay1722@gmail.com" aria-label="Email">
-                        <i class="bi bi-envelope"></i>
-                    </a>
-                </div>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
             </div>
+        </div>
+    </nav>
 
-            <div class="col-lg-4">
-                <div class="card bg-dark border-secondary shadow-lg">
-                    <div class="card-header border-secondary">
-                        <span class="text-danger">●</span>
-                        <span class="text-warning">●</span>
-                        <span class="text-success">●</span>
+    <!-- Hero -->
+    <header id="home" class="hero-section section-padding">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-7">
+                    <p class="eyebrow mb-3">PYTHON BACKEND DEVELOPER</p>
+
+                    <h1 class="display-3 fw-bold mb-3">
+                        Hi, I'm <span class="text-primary">Akshay Khairnar</span>
+                    </h1>
+
+                    <h2 class="h4 text-light-emphasis mb-4">
+                        Building reliable APIs, financial platforms, and AI-powered applications.
+                    </h2>
+
+                    <p class="hero-description mb-4">
+                        Backend developer experienced in Python, Django, REST APIs, PostgreSQL,
+                        fintech applications, and AI integrations. I enjoy turning business
+                        requirements into clean, scalable, and maintainable software.
+                    </p>
+
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#projects" class="btn btn-primary btn-lg">
+                            <i class="bi bi-code-slash me-2"></i>View Projects
+                        </a>
+
+                        <a href="#contact" class="btn btn-outline-light btn-lg">
+                            <i class="bi bi-envelope me-2"></i>Contact Me
+                        </a>
                     </div>
-                    <div class="card-body">
-<pre class="mb-0"><code><span class="code-purple">class</span> <span class="code-yellow">BackendDeveloper</span>:
 
-    name = <span class="code-green">"Akshay Khairnar"</span>
+                    <div class="social-links mt-4">
+                        <a
+                            href="https://www.linkedin.com/in/akshaykhairnar-backend-developer/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn"
+                        >
+                            <i class="bi bi-linkedin"></i>
+                        </a>
 
-    skills = [
-        <span class="code-green">"Python"</span>,
-        <span class="code-green">"Django"</span>,
-        <span class="code-green">"REST APIs"</span>,
-        <span class="code-green">"FastAPI"</span>
-    ]
+                        <a
+                            href="https://github.com/khairnarakshay"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub"
+                        >
+                            <i class="bi bi-github"></i>
+                        </a>
 
-    domain = <span class="code-green">"Fintech"</span>
-    learning = <span class="code-green">"AI/ML"</span></code></pre>
+                        <a href="mailto:khairnarakshay1722@gmail.com" aria-label="Email">
+                            <i class="bi bi-envelope-fill"></i>
+                        </a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</header>
 
-<section id="about" class="py-5">
-    <div class="container py-4">
-        <div class="section-heading mb-5">
-            <span>01. ABOUT ME</span>
-            <h2>Turning ideas into <span class="text-primary">backend solutions.</span></h2>
-        </div>
-
-        <div class="row g-5">
-            <div class="col-lg-7">
-                <p class="text-secondary">
-                    I'm Akshay Khairnar, a Python Backend Developer specializing in Django,
-                    Django REST Framework, FastAPI, and PostgreSQL.
-                </p>
-                <p class="text-secondary">
-                    I work in the fintech domain, building backend systems and REST APIs
-                    for financial applications, mutual fund transaction workflows,
-                    stock advisory platforms, and employee monitoring systems.
-                </p>
-                <p class="text-secondary">
-                    I'm also exploring GenAI tooling including LangChain, LangGraph,
-                    RAG pipelines, MCP, and Hugging Face models.
-                </p>
-
-                <div class="d-flex flex-wrap gap-2 mt-4">
-                    <span class="badge text-bg-primary">Python</span>
-                    <span class="badge text-bg-secondary">Django</span>
-                    <span class="badge text-bg-secondary">REST APIs</span>
-                    <span class="badge text-bg-secondary">PostgreSQL</span>
-                    <span class="badge text-bg-secondary">FastAPI</span>
-                    <span class="badge text-bg-secondary">Fintech</span>
-                </div>
-            </div>
-
-            <div class="col-lg-5">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title mb-4"><i class="bi bi-person-badge text-primary"></i> Quick Info</h5>
-                        <div class="d-flex justify-content-between border-bottom py-3 gap-3">
-                            <span class="text-secondary">Location</span><strong>Nashik, India</strong>
-                        </div>
-                        <div class="d-flex justify-content-between border-bottom py-3 gap-3">
-                            <span class="text-secondary">Specialization</span><strong>Backend Development</strong>
-                        </div>
-                        <div class="d-flex justify-content-between border-bottom py-3 gap-3">
-                            <span class="text-secondary">Domain</span><strong>Fintech</strong>
-                        </div>
-                        <div class="d-flex justify-content-between py-3 gap-3">
-                            <span class="text-secondary">Education</span><strong>MCA</strong>
+                <div class="col-lg-5 text-center">
+                    <div class="profile-wrapper">
+                        <!-- Replace images/profile.jpg with your own photo -->
+                        <img
+                            src="images/profile.jpg"
+                            class="profile-photo"
+                            alt="Akshay Khairnar - Python Backend Developer"
+                            onerror="this.onerror=null; this.src='https://placehold.co/500x500/111827/ffffff?text=AK';"
+                        >
+                        <div class="profile-badge">
+                            <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                            Open to learning and building
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
-    </div>
-</section>
+    </header>
 
-<section id="experience" class="py-5 section-dark">
-    <div class="container py-4">
-        <div class="section-heading mb-5">
-            <span>02. EXPERIENCE</span>
-            <h2>My professional <span class="text-primary">journey.</span></h2>
-        </div>
-
-        <div class="vstack gap-4">
-            <div class="card">
-                <div class="card-body p-4">
-                    <div class="d-flex flex-wrap justify-content-between gap-2">
-                        <h4>Backend Developer</h4>
-                        <span class="badge text-bg-primary align-self-start">Richmee Fintech</span>
-                    </div>
-                    <p class="text-primary mb-3">Python · Django · DRF · PostgreSQL · Celery · Redis</p>
-                    <ul class="text-secondary">
-                        <li>Developed fintech backend systems and REST APIs.</li>
-                        <li>Worked on mutual fund transaction workflows, SWP, STP, order placement, and order status tracking.</li>
-                        <li>Built stock advisory and portfolio management modules.</li>
-                        <li>Implemented portfolio rebalancing, email notifications, PDF invoice generation, and scheduled workflows.</li>
-                        <li>Designed backend services for employee monitoring and activity analytics.</li>
-                        <li>Implemented RBAC and optimized ORM queries and database operations.</li>
-                    </ul>
-                </div>
+    <!-- About -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="section-heading">
+                <p class="eyebrow">ABOUT ME</p>
+                <h2>Professional Summary</h2>
             </div>
 
-            <div class="card">
-                <div class="card-body p-4">
-                    <div class="d-flex flex-wrap justify-content-between gap-2">
-                        <h4>Python Backend Developer Intern</h4>
-                        <span class="badge text-bg-primary align-self-start">FundsPi</span>
-                    </div>
-                    <p class="text-primary mb-3">Python · Pandas · Django · REST APIs · AMFI</p>
-                    <ul class="text-secondary">
-                        <li>Developed mutual fund factsheet processing using Python and Pandas.</li>
-                        <li>Automated extraction of asset allocation, sector allocation, and portfolio analytics.</li>
-                        <li>Designed database structures and APIs for mutual fund analytics.</li>
-                        <li>Built automated NAV ingestion pipelines using daily AMFI data.</li>
-                    </ul>
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <p class="section-text">
+                        I am a Python Backend Developer working on web applications and
+                        financial technology solutions. My work includes API development,
+                        database design, authentication, background tasks, data processing,
+                        and third-party API integrations.
+                    </p>
+
+                    <p class="section-text">
+                        I am also exploring Generative AI, LangChain, LangGraph, MCP,
+                        RAG-based systems, and AI automation to build practical products
+                        that solve real-world problems.
+                    </p>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<section id="projects" class="py-5">
-    <div class="container py-4">
-        <div class="section-heading mb-5">
-            <span>03. PROJECTS</span>
-            <h2>Things I've <span class="text-primary">built.</span></h2>
-        </div>
-
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 project-card">
-                    <div class="card-body d-flex flex-column">
-                        <i class="bi bi-bank project-icon"></i>
-                        <h4>Mutual Fund Platform</h4>
-                        <p class="text-secondary">Backend systems for mutual fund transaction workflows, including SWP, STP, order placement, and order status tracking.</p>
-                        <div class="mt-auto"><span class="badge text-bg-secondary">Python</span> <span class="badge text-bg-secondary">Django</span> <span class="badge text-bg-secondary">BSE StAR MF</span></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 project-card">
-                    <div class="card-body d-flex flex-column">
-                        <i class="bi bi-graph-up-arrow project-icon"></i>
-                        <h4>Stock Advisory Platform</h4>
-                        <p class="text-secondary">Stock advisory and portfolio management modules with client onboarding, portfolio allocation, and subscription management.</p>
-                        <div class="mt-auto"><span class="badge text-bg-secondary">Django</span> <span class="badge text-bg-secondary">PostgreSQL</span> <span class="badge text-bg-secondary">Celery</span></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 project-card">
-                    <div class="card-body d-flex flex-column">
-                        <i class="bi bi-display project-icon"></i>
-                        <h4>Employee Monitoring System</h4>
-                        <p class="text-secondary">Real-time employee monitoring backend with screenshot tracking, active window monitoring, and activity analytics.</p>
-                        <div class="mt-auto"><span class="badge text-bg-secondary">Python</span> <span class="badge text-bg-secondary">Django</span> <span class="badge text-bg-secondary">RBAC</span></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 project-card">
-                    <div class="card-body d-flex flex-column">
-                        <i class="bi bi-file-earmark-spreadsheet project-icon"></i>
-                        <h4>Mutual Fund Analytics</h4>
-                        <p class="text-secondary">Factsheet processing and NAV ingestion pipelines for extracting mutual fund fundamentals and historical analytics.</p>
-                        <div class="mt-auto"><span class="badge text-bg-secondary">Python</span> <span class="badge text-bg-secondary">Pandas</span> <span class="badge text-bg-secondary">AMFI</span></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 project-card">
-                    <div class="card-body d-flex flex-column">
-                        <i class="bi bi-robot project-icon"></i>
-                        <h4>AI Expense Tracker</h4>
-                        <p class="text-secondary">Personal finance application using FastAPI, PostgreSQL, and MCP for natural-language expense tracking and summaries.</p>
-                        <div class="mt-auto"><span class="badge text-bg-secondary">FastAPI</span> <span class="badge text-bg-secondary">PostgreSQL</span> <span class="badge text-bg-secondary">MCP</span></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 project-card">
-                    <div class="card-body d-flex flex-column">
-                        <i class="bi bi-cpu project-icon"></i>
-                        <h4>AI / GenAI Applications</h4>
-                        <p class="text-secondary">Exploring AI applications using LangChain, LangGraph, RAG pipelines, and Hugging Face models.</p>
-                        <div class="mt-auto"><span class="badge text-bg-secondary">LangChain</span> <span class="badge text-bg-secondary">LangGraph</span> <span class="badge text-bg-secondary">RAG</span></div>
+                <div class="col-lg-4">
+                    <div class="info-card h-100">
+                        <h3 class="h5 mb-3">Quick Details</h3>
+                        <ul class="list-unstyled info-list mb-0">
+                            <li><i class="bi bi-geo-alt-fill"></i> India</li>
+                            <li><i class="bi bi-briefcase-fill"></i> Python Backend Developer</li>
+                            <li><i class="bi bi-mortarboard-fill"></i> MCA Graduate</li>
+                            <li><i class="bi bi-database-fill"></i> Django & PostgreSQL</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="skills" class="py-5 section-dark">
-    <div class="container py-4">
-        <div class="section-heading mb-5">
-            <span>04. TECHNICAL SKILLS</span>
-            <h2>My technical <span class="text-primary">toolkit.</span></h2>
-        </div>
-
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-4"><div class="card h-100"><div class="card-body"><i class="bi bi-code-square fs-2 text-primary"></i><h5 class="mt-3">Languages</h5><p class="text-secondary mb-0">Python, SQL, JavaScript</p></div></div></div>
-            <div class="col-md-6 col-lg-4"><div class="card h-100"><div class="card-body"><i class="bi bi-server fs-2 text-primary"></i><h5 class="mt-3">Backend Frameworks</h5><p class="text-secondary mb-0">Django, Django REST Framework, FastAPI</p></div></div></div>
-            <div class="col-md-6 col-lg-4"><div class="card h-100"><div class="card-body"><i class="bi bi-database fs-2 text-primary"></i><h5 class="mt-3">Databases & Caching</h5><p class="text-secondary mb-0">PostgreSQL, SQLite, Redis</p></div></div></div>
-            <div class="col-md-6 col-lg-4"><div class="card h-100"><div class="card-body"><i class="bi bi-braces fs-2 text-primary"></i><h5 class="mt-3">AI / GenAI</h5><p class="text-secondary mb-0">LangChain, LangGraph, RAG, MCP</p></div></div></div>
-            <div class="col-md-6 col-lg-4"><div class="card h-100"><div class="card-body"><i class="bi bi-tools fs-2 text-primary"></i><h5 class="mt-3">Tools & Libraries</h5><p class="text-secondary mb-0">Pandas, NumPy, Celery, Git, GitLab, Postman</p></div></div></div>
-            <div class="col-md-6 col-lg-4"><div class="card h-100"><div class="card-body"><i class="bi bi-diagram-3 fs-2 text-primary"></i><h5 class="mt-3">API Development</h5><p class="text-secondary mb-0">REST APIs, RBAC, ORM Optimization</p></div></div></div>
-        </div>
-    </div>
-</section>
-
-<section id="education" class="py-5">
-    <div class="container py-4">
-        <div class="section-heading mb-5">
-            <span>05. EDUCATION</span>
-            <h2>My academic <span class="text-primary">background.</span></h2>
-        </div>
-
-        <div class="row g-4">
-            <div class="col-md-6">
-                <div class="card h-100"><div class="card-body p-4">
-                    <i class="bi bi-mortarboard-fill fs-2 text-primary"></i>
-                    <p class="text-secondary mt-3 mb-2">2023 – 2025</p>
-                    <h4>Master of Computer Applications</h4>
-                    <p class="text-primary">Zeal Institute of Business Administration, Computer Application and Research, Pune</p>
-                    <p class="text-secondary mb-0">CGPA: 7.83</p>
-                </div></div>
+    <!-- Experience -->
+    <section id="experience" class="section-padding section-dark">
+        <div class="container">
+            <div class="section-heading">
+                <p class="eyebrow">CAREER</p>
+                <h2>Experience</h2>
             </div>
-            <div class="col-md-6">
-                <div class="card h-100"><div class="card-body p-4">
-                    <i class="bi bi-mortarboard-fill fs-2 text-primary"></i>
-                    <p class="text-secondary mt-3 mb-2">2020 – 2023</p>
-                    <h4>Bachelor of Computer Applications</h4>
-                    <p class="text-primary">MVP's CMCS College, Nashik</p>
-                    <p class="text-secondary mb-0">Affiliated to Savitribai Phule Pune University</p>
-                </div></div>
+
+            <div class="timeline">
+
+                <article class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="d-flex flex-wrap justify-content-between gap-2 mb-2">
+                            <h3 class="h5 mb-0">Backend Developer</h3>
+                            <span class="timeline-date">Richmee Fintech</span>
+                        </div>
+
+                        <p class="text-primary mb-3">
+                            Python • Django • REST APIs • Fintech
+                        </p>
+
+                        <ul>
+                            <li>Developing backend APIs for financial technology applications.</li>
+                            <li>Working with investment, mutual fund, portfolio, and transaction workflows.</li>
+                            <li>Integrating third-party financial APIs and maintaining database-driven features.</li>
+                            <li>Working with PostgreSQL, background jobs, deployment, and production debugging.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="d-flex flex-wrap justify-content-between gap-2 mb-2">
+                            <h3 class="h5 mb-0">Python/Django Intern</h3>
+                            <span class="timeline-date">FundsPi / Mudraangle Technologies LLP</span>
+                        </div>
+
+                        <p class="text-primary mb-3">
+                            Python • Django • Backend Development
+                        </p>
+
+                        <ul>
+                            <li>Worked on backend development using Python and Django.</li>
+                            <li>Learned API development, database operations, debugging, and application workflows.</li>
+                            <li>Contributed to web application features during the internship period.</li>
+                        </ul>
+                    </div>
+                </article>
+
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="contact" class="py-5 section-dark">
-    <div class="container py-4">
-        <div class="text-center mb-5">
-            <p class="text-primary fw-semibold">06. CONTACT</p>
-            <h2 class="fw-bold">Let's build something <span class="text-primary">great.</span></h2>
-            <p class="text-secondary mx-auto contact-text">
-                I'm interested in backend development, fintech, and AI engineering opportunities.
-                Feel free to connect with me.
+    <!-- Projects -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <div class="section-heading">
+                <p class="eyebrow">MY WORK</p>
+                <h2>Featured Projects</h2>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-xl-4">
+                    <article class="project-card h-100">
+                        <div class="project-icon">
+                            <i class="bi bi-wallet2"></i>
+                        </div>
+                        <h3 class="h5">Personal Finance AI Expense Tracker</h3>
+                        <p>
+                            An AI-assisted expense tracker that stores daily expenses,
+                            understands natural-language entries, categorizes transactions,
+                            and generates financial summaries.
+                        </p>
+                        <div class="project-tags">
+                            <span>FastAPI</span>
+                            <span>PostgreSQL</span>
+                            <span>MCP</span>
+                            <span>AI</span>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-xl-4">
+                    <article class="project-card h-100">
+                        <div class="project-icon">
+                            <i class="bi bi-graph-up-arrow"></i>
+                        </div>
+                        <h3 class="h5">Mutual Fund & Stock Advisory Platform</h3>
+                        <p>
+                            A financial platform containing investment workflows,
+                            portfolio management, mutual fund data, transaction processing,
+                            and third-party API integrations.
+                        </p>
+                        <div class="project-tags">
+                            <span>Django</span>
+                            <span>PostgreSQL</span>
+                            <span>REST API</span>
+                            <span>Fintech</span>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-xl-4">
+                    <article class="project-card h-100">
+                        <div class="project-icon">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        <h3 class="h5">Employee Tracking & Attendance System</h3>
+                        <p>
+                            A location-based attendance system using selfie verification,
+                            geolocation, employee tracking, payroll workflows, and attendance
+                            report processing.
+                        </p>
+                        <div class="project-tags">
+                            <span>Django</span>
+                            <span>DRF</span>
+                            <span>Geolocation</span>
+                            <span>Payroll</span>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-xl-4">
+                    <article class="project-card h-100">
+                        <div class="project-icon">
+                            <i class="bi bi-chat-dots-fill"></i>
+                        </div>
+                        <h3 class="h5">AI Customer Support Chatbot</h3>
+                        <p>
+                            A chatbot concept using LangChain, Hugging Face models,
+                            conversation history, tool calling, and financial data retrieval.
+                        </p>
+                        <div class="project-tags">
+                            <span>LangChain</span>
+                            <span>Hugging Face</span>
+                            <span>Django</span>
+                            <span>RAG</span>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-xl-4">
+                    <article class="project-card h-100">
+                        <div class="project-icon">
+                            <i class="bi bi-basket2-fill"></i>
+                        </div>
+                        <h3 class="h5">Online Tiffin Ordering Service</h3>
+                        <p>
+                            A Django-based application for managing food items,
+                            customer orders, and tiffin service workflows.
+                        </p>
+                        <div class="project-tags">
+                            <span>Django</span>
+                            <span>Python</span>
+                            <span>SQLite</span>
+                            <span>Web App</span>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-xl-4">
+                    <article class="project-card h-100">
+                        <div class="project-icon">
+                            <i class="bi bi-hospital-fill"></i>
+                        </div>
+                        <h3 class="h5">Hospital Management System</h3>
+                        <p>
+                            A web application concept for managing hospital-related
+                            records, users, and operational workflows.
+                        </p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>Database</span>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section-padding section-dark">
+        <div class="container">
+            <div class="section-heading">
+                <p class="eyebrow">TECHNOLOGIES</p>
+                <h2>Technical Skills</h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-card">
+                        <i class="bi bi-code-square"></i>
+                        <h3 class="h6">Backend</h3>
+                        <p>Python, Django, Django REST Framework, FastAPI</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-card">
+                        <i class="bi bi-database"></i>
+                        <h3 class="h6">Database</h3>
+                        <p>PostgreSQL, SQLite, ORM, Database Design</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-card">
+                        <i class="bi bi-cloud-arrow-up"></i>
+                        <h3 class="h6">DevOps</h3>
+                        <p>AWS EC2, Linux, Docker, Nginx, Gunicorn, Git</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-card">
+                        <i class="bi bi-stars"></i>
+                        <h3 class="h6">AI & Automation</h3>
+                        <p>LangChain, LangGraph, MCP, RAG, Hugging Face</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section-padding">
+        <div class="container">
+            <div class="section-heading">
+                <p class="eyebrow">EDUCATION</p>
+                <h2>Academic Background</h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="education-card h-100">
+                        <i class="bi bi-mortarboard-fill education-icon"></i>
+                        <h3 class="h5">Master of Computer Applications</h3>
+                        <p class="text-primary mb-2">MCA</p>
+                        <p class="mb-0">
+                            Zeal Institute of Business Administration, Computer Application and Research
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="education-card h-100">
+                        <i class="bi bi-book-fill education-icon"></i>
+                        <h3 class="h5">Bachelor of Computer Applications</h3>
+                        <p class="text-primary mb-2">BCA</p>
+                        <p class="mb-0">
+                            MVP's College of Computer Science
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section-padding section-dark">
+        <div class="container">
+            <div class="section-heading">
+                <p class="eyebrow">GET IN TOUCH</p>
+                <h2>Let's Connect</h2>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <p class="section-text">
+                        I am interested in backend development, fintech applications,
+                        AI automation, and opportunities where I can continue learning
+                        and contribute to meaningful products.
+                    </p>
+
+                    <div class="contact-actions mt-4">
+                        <a href="mailto:khairnarakshay1722@gmail.com" class="btn btn-primary btn-lg">
+                            <i class="bi bi-envelope me-2"></i>
+                            khairnarakshay1722@gmail.com
+                        </a>
+
+                        <a
+                            href="https://github.com/khairnarakshay"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-outline-light btn-lg"
+                        >
+                            <i class="bi bi-github me-2"></i>
+                            GitHub
+                        </a>
+
+                        <a
+                            href="https://www.linkedin.com/in/akshaykhairnar-backend-developer/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-outline-light btn-lg"
+                        >
+                            <i class="bi bi-linkedin me-2"></i>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section py-4">
+        <div class="container text-center">
+            <p class="mb-0">
+                © <span id="currentYear"></span> Akshay Khairnar. Built with Bootstrap.
             </p>
         </div>
+    </footer>
 
-        <div class="text-center">
-            <a href="mailto:khairnarakshay1722@gmail.com" class="btn btn-primary btn-lg me-2 mb-3">
-                <i class="bi bi-envelope"></i> Send Email
-            </a>
-            <a href="https://github.com/khairnarakshay" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-lg mb-3">
-                <i class="bi bi-github"></i> GitHub
-            </a>
-        </div>
+    <button
+        id="backToTop"
+        class="back-to-top"
+        type="button"
+        aria-label="Back to top"
+        title="Back to top"
+    >
+        <i class="bi bi-arrow-up"></i>
+    </button>
 
-        <div class="text-center mt-4">
-            <div class="badge-base LI-profile-badge"
-                 data-locale="en_US"
-                 data-size="medium"
-                 data-theme="dark"
-                 data-type="HORIZONTAL"
-                 data-vanity="akshaykhairnar-backend-developer"
-                 data-version="v1">
-                <a class="badge-base__link LI-simple-link"
-                   href="https://in.linkedin.com/in/akshaykhairnar-backend-developer?trk=profile-badge">
-                    Akshay Khairnar
-                </a>
-            </div>
-        </div>
-
-        <p class="text-center text-secondary mt-4 mb-0">
-            <i class="bi bi-geo-alt"></i> Nashik, Maharashtra, India
-        </p>
-    </div>
-</section>
-
-<footer class="py-4 border-top">
-    <div class="container text-center">
-        <p class="text-secondary mb-2">Designed & built by <span class="text-primary">Akshay Khairnar</span></p>
-        <p class="small text-secondary mb-0">© <span id="currentYear"></span> Akshay Khairnar. All rights reserved.</p>
-    </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-<script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
