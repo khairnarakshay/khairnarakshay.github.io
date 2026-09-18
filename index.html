@@ -1,264 +1,380 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Akshay Khairnar - Python Backend Developer specializing in Django, REST APIs, FastAPI, fintech, and AI/ML.">
+    <meta name="author" content="Akshay Khairnar">
+    <title>Akshay Khairnar | Python Backend Developer</title>
 
-	<head>
-		<title>Akshay Khairnar</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-
-        <!--link to use symbol font-->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	</head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
-    
-  <header id="header-body"><!---header section--->
-     <nav class="horizontal-list nave">
-     		<ul class="text-align">
-     				<li>
-     					<a href="#home">Home</a>	
-     				</li>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top border-bottom">
+    <div class="container">
+        <a class="navbar-brand fw-bold fs-3" href="#home">AK<span class="text-primary">.</span></a>
 
-     				<li>
-     					<a href="#about" target="#about-information">About</a>	
-     				</li>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-     				<li>
-     					<a href="#skill">Skills</a>	
-     				</li>
-
-     				<li>
-     					<a href="#expiriance">Experiance</a>	
-     				</li>
-
-     				<li>
-     					<a href="#education">Education</a>	
-     				</li>
-
-     				<li>
-     					<a href="#contact">Contact</a>	
-     				</li>
-
-     		</ul>	
-     </nav>
-     
-
-
-     <div id="name-social-container">
-
-         <!---Profile-name-->
-     	   <div class="text-align" >
-             <h1 id="my-name">
-                KHAIRNAR&nbspAKSHAY
-             </h1>
-         </div><!---my-name-->
-
-
-         <!---icon-horizontal list--->
-           <div>
-         		<ul class="horizontal-list text-align social-icon">
-
-         				<li>
-         			   	  <a href="https://www.facebook.com/akshay.khairnar.58726?mibextid=ZbWKwL0"><i class="fa-brands fa-facebook"></i></a>
-         			   </li>
-
-         			   <li>
-         			   	  <a href="https://www.linkedin.com/in/akshay-khairnar-7110871a0"><i class="fa-brands fa-linkedin"></i></a>
-         			   </li>
-
-         			    <li>
-         			   	  <a href="https://instagram.com/khairnar_ak_2002?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-instagram"></i></a>
-         			   </li>
-
-         			    <li>
-         			   	  <a href="github.com"><i class="fa-brands fa-github"></i></a>
-         			   </li>
-         		</ul>	   
-
-          </div>  <!---icon-horizontal list---close-->
-
-     </div><!---name-social-container--close-->
-
-  </header><!---header-body close-->	
-
-<!------------about section---------------->
-
-  <main>
-
-   <section id="about" class="text-align">
-
-  	  <!---profile-image-->
- 		 	<div id="image">
-  			  <img src="my-image.jpg">
-  		   </div>	
-      <div>
-       <p class="text-align">
-       	Aspiring computer programmer with a <b><u>BBA_CA(Computer Application)</u></b>  degree and proven problem-solving and troubleshooting skills. Seeking an entry-level programmer or coder position to continue expanding my knowledge of different languages and systems.Always open to work
-       </p>
-      </div>
-
-    </section><!--about section end-->
-
-
-   <!------------skill section----------------->
-    <section>
-         <div id="skill" >
-            <h1 class="section-heading text-align" style="font-size:2.5rem;">
-
-                       <span><i class="fas fa-chalkboard-teacher"></i> </span>
-                       <span> SKILLS </span>
-            </h1>
-
-        <div id="skill-display">  
-             <div class="container">
-               <div class="skills html">
-                   <p>HTML</p>
-               </div>
-             </div>
-
-             <div class="container">
-               <div class="skills css">
-                   <p>CSS</p>
-               </div>
-             </div>
-
-            <div class="container">
-               <div class="skills js">
-                   <p>Javascript</p>
-               </div>
-            </div>
-
-            <div class="container">
-               <div class="skills php">
-                   <p>PHP</p>
-               </div>
-            </div>
-
-            <div class="container">
-               <div class="skills java">
-                   <p>JAVA</p>
-               </div>
-            </div>
-        </div><!--skil-display-->
-      </div><!--id="skill"--close--->
-    </section> <!--skill section--> 
-
-
-   <!--education detials-->
-   <section>
-      <div id="education">
-        <div class="section-heading text-align">
-           <!--heading of section-->
-           <h1>
-              <span> <i class="fas fa-graduation-cap"></i></span> 
-              <span>EDUCATION</span>
-           </h1>  
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                    <a href="#contact" class="btn btn-primary btn-sm px-3">Let's Connect <i class="bi bi-arrow-up-right"></i></a>
+                </li>
+            </ul>
         </div>
-      
-      <!--course detials-->
-        <div class="course-detials">
-           <div id="ssc">
-               <u><h1>10<sup>th</sup>/SSC</h1></u>
-                  <span>
+    </div>
+</nav>
 
-                    <h3>School Name</h3> 
-                    <p>Sau K.M.K School,Nandgaon<p> 
-                    <h3>Percantege %</h3>
-                    <p>88.80%<p>
-                    <h3>Bord</h3>
-                    <p>SSC</p>
+<header id="home" class="hero-section">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-8">
+                <p class="text-primary fw-semibold mb-3">
+                    <i class="bi bi-code-slash"></i> PYTHON BACKEND DEVELOPER
+                </p>
+                <h1 class="display-3 fw-bold mb-3">
+                    Hi, I'm <span class="text-primary">Akshay Khairnar</span>
+                </h1>
+                <h2 class="h3 text-light-emphasis mb-4">Building backend systems, APIs & fintech solutions.</h2>
+                <p class="lead text-secondary mb-4">
+                    Python Backend Developer specializing in Django, Django REST Framework,
+                    FastAPI, PostgreSQL, fintech integrations, and AI-powered applications.
+                </p>
 
-                  </span>
-           </div>
+                <div class="d-flex flex-wrap gap-3">
+                    <a href="#projects" class="btn btn-primary btn-lg">View My Projects <i class="bi bi-arrow-right"></i></a>
+                    <a href="#contact" class="btn btn-outline-light btn-lg">Contact Me <i class="bi bi-envelope"></i></a>
+                </div>
 
-           <!-- detials of course-->
-           <div id="hsc">
-                <h1>12<sup>th</sup>/HSC</h1>
-                <span>
+                <div class="d-flex gap-4 mt-4 fs-4">
+                    <a href="https://github.com/khairnarakshay" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/akshaykhairnar-backend-developer/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="mailto:khairnarakshay1722@gmail.com" aria-label="Email">
+                        <i class="bi bi-envelope"></i>
+                    </a>
+                </div>
+            </div>
 
-                    <h3>Collage Name</h3> 
-                    <p>MVP'S Arts Comm & sci College,Nandgaon<p> 
-                    <h3>Percantege %</h3>
-                    <p>70.77%<p>
-                    <h3>Bord</h3>
-                    <p>HSC</p>
+            <div class="col-lg-4">
+                <div class="card bg-dark border-secondary shadow-lg">
+                    <div class="card-header border-secondary">
+                        <span class="text-danger">●</span>
+                        <span class="text-warning">●</span>
+                        <span class="text-success">●</span>
+                    </div>
+                    <div class="card-body">
+<pre class="mb-0"><code><span class="code-purple">class</span> <span class="code-yellow">BackendDeveloper</span>:
 
-                  </span>
-           </div>
+    name = <span class="code-green">"Akshay Khairnar"</span>
 
-           <!--course detials-->
-           <div id="bba-ca">
-              <h1>Degeree/BBA-CA</h1>
-              <span>
-                    <h3>College Name</h3> 
-                    <p>MVP'S C.M.C.S College,Gangapur road Nashik<p> 
-                    <h3>CGPA</h3>
-                     <p>NA<p>
-                     <h3>University</h3>
-                     <p>Savitribai Phule pune university</p>
+    skills = [
+        <span class="code-green">"Python"</span>,
+        <span class="code-green">"Django"</span>,
+        <span class="code-green">"REST APIs"</span>,
+        <span class="code-green">"FastAPI"</span>
+    ]
 
-                  </span>
-           </div>
-        </div><!--course-detials close-->
-      </div><!--education close-->  
-   </section>
-          
+    domain = <span class="code-green">"Fintech"</span>
+    learning = <span class="code-green">"AI/ML"</span></code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 
-   <section>
-      <div id="contact">
-           <h1 class="section-heading text-align " style="font-size:2.5rem;">
-                <span>
-                    <i class="fa-sharp fa-regular fa-address-card"></i>
-                </span>
-                <span> CONTACT</span>
-            </h1>
-         
+<section id="about" class="py-5">
+    <div class="container py-4">
+        <div class="section-heading mb-5">
+            <span>01. ABOUT ME</span>
+            <h2>Turning ideas into <span class="text-primary">backend solutions.</span></h2>
+        </div>
 
-         <div id="section">
-           <div id="left-section">
-               <span> <i class="fa-solid fa-user">&nbsp&nbsp</i><span> Khairnar Akshay Popat </span><br>
-               <i class="fa-solid fa-envelope">&nbsp&nbsp</i>
-               <span><a href ="mailto:khairnarakshay1722@gmail.com">khairnarakshay1722@gmail.com</a></span><br>
-               <i class="fa-solid fa-phone">&nbsp&nbsp</i>+918830437088<span> 
-                <br>
-                <div id="msg-btn">
-                   <a href="mailto:khairnarakshay1722"><button class="button">SEND MAIL</button></a>
-               </div>
-           </div><!--left-section----close-->
+        <div class="row g-5">
+            <div class="col-lg-7">
+                <p class="text-secondary">
+                    I'm Akshay Khairnar, a Python Backend Developer specializing in Django,
+                    Django REST Framework, FastAPI, and PostgreSQL.
+                </p>
+                <p class="text-secondary">
+                    I work in the fintech domain, building backend systems and REST APIs
+                    for financial applications, mutual fund transaction workflows,
+                    stock advisory platforms, and employee monitoring systems.
+                </p>
+                <p class="text-secondary">
+                    I'm also exploring GenAI tooling including LangChain, LangGraph,
+                    RAG pipelines, MCP, and Hugging Face models.
+                </p>
 
+                <div class="d-flex flex-wrap gap-2 mt-4">
+                    <span class="badge text-bg-primary">Python</span>
+                    <span class="badge text-bg-secondary">Django</span>
+                    <span class="badge text-bg-secondary">REST APIs</span>
+                    <span class="badge text-bg-secondary">PostgreSQL</span>
+                    <span class="badge text-bg-secondary">FastAPI</span>
+                    <span class="badge text-bg-secondary">Fintech</span>
+                </div>
+            </div>
 
-           <div id="right-section"> 
-                <h2>Get In Touch</h2>
-                <p>want to get in touch? I'd like to here from you..</p><br><br>
+            <div class="col-lg-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title mb-4"><i class="bi bi-person-badge text-primary"></i> Quick Info</h5>
+                        <div class="d-flex justify-content-between border-bottom py-3 gap-3">
+                            <span class="text-secondary">Location</span><strong>Nashik, India</strong>
+                        </div>
+                        <div class="d-flex justify-content-between border-bottom py-3 gap-3">
+                            <span class="text-secondary">Specialization</span><strong>Backend Development</strong>
+                        </div>
+                        <div class="d-flex justify-content-between border-bottom py-3 gap-3">
+                            <span class="text-secondary">Domain</span><strong>Fintech</strong>
+                        </div>
+                        <div class="d-flex justify-content-between py-3 gap-3">
+                            <span class="text-secondary">Education</span><strong>MCA</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-                 <span><h2>My Address</h2></span>
-                       <p><i class="fa-solid fa-location-dot"></i>
-                            Nandgon,Nashik</p>
-           </div><!--right-section close-->
+<section id="experience" class="py-5 section-dark">
+    <div class="container py-4">
+        <div class="section-heading mb-5">
+            <span>02. EXPERIENCE</span>
+            <h2>My professional <span class="text-primary">journey.</span></h2>
+        </div>
 
-          <div class="footer"> <ul class="horizontal-list text-align social-icon">
+        <div class="vstack gap-4">
+            <div class="card">
+                <div class="card-body p-4">
+                    <div class="d-flex flex-wrap justify-content-between gap-2">
+                        <h4>Backend Developer</h4>
+                        <span class="badge text-bg-primary align-self-start">Richmee Fintech</span>
+                    </div>
+                    <p class="text-primary mb-3">Python · Django · DRF · PostgreSQL · Celery · Redis</p>
+                    <ul class="text-secondary">
+                        <li>Developed fintech backend systems and REST APIs.</li>
+                        <li>Worked on mutual fund transaction workflows, SWP, STP, order placement, and order status tracking.</li>
+                        <li>Built stock advisory and portfolio management modules.</li>
+                        <li>Implemented portfolio rebalancing, email notifications, PDF invoice generation, and scheduled workflows.</li>
+                        <li>Designed backend services for employee monitoring and activity analytics.</li>
+                        <li>Implemented RBAC and optimized ORM queries and database operations.</li>
+                    </ul>
+                </div>
+            </div>
 
-                        <li>
-                          <a href="https://www.facebook.com/akshay.khairnar.58726?mibextid=ZbWKwL0"><i class="fa-brands fa-facebook"></i></a>
-                       </li>
+            <div class="card">
+                <div class="card-body p-4">
+                    <div class="d-flex flex-wrap justify-content-between gap-2">
+                        <h4>Python Backend Developer Intern</h4>
+                        <span class="badge text-bg-primary align-self-start">FundsPi</span>
+                    </div>
+                    <p class="text-primary mb-3">Python · Pandas · Django · REST APIs · AMFI</p>
+                    <ul class="text-secondary">
+                        <li>Developed mutual fund factsheet processing using Python and Pandas.</li>
+                        <li>Automated extraction of asset allocation, sector allocation, and portfolio analytics.</li>
+                        <li>Designed database structures and APIs for mutual fund analytics.</li>
+                        <li>Built automated NAV ingestion pipelines using daily AMFI data.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-                       <li>
-                          <a href="https://www.linkedin.com/in/akshay-khairnar-7110871a0"><i class="fa-brands fa-linkedin"></i></a>
-                       </li>
+<section id="projects" class="py-5">
+    <div class="container py-4">
+        <div class="section-heading mb-5">
+            <span>03. PROJECTS</span>
+            <h2>Things I've <span class="text-primary">built.</span></h2>
+        </div>
 
-                        <li>
-                          <a href="https://instagram.com/khairnar_ak_2002?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-instagram"></i></a>
-                       </li>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 project-card">
+                    <div class="card-body d-flex flex-column">
+                        <i class="bi bi-bank project-icon"></i>
+                        <h4>Mutual Fund Platform</h4>
+                        <p class="text-secondary">Backend systems for mutual fund transaction workflows, including SWP, STP, order placement, and order status tracking.</p>
+                        <div class="mt-auto"><span class="badge text-bg-secondary">Python</span> <span class="badge text-bg-secondary">Django</span> <span class="badge text-bg-secondary">BSE StAR MF</span></div>
+                    </div>
+                </div>
+            </div>
 
-                        <li>
-                          <a href="github.com"><i class="fa-brands fa-github"></i></a>
-                       </li>
-                </ul>
-            </div>    
-        </div><!--section close-->     
-      </div><!---contact--->
-   </section>       
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 project-card">
+                    <div class="card-body d-flex flex-column">
+                        <i class="bi bi-graph-up-arrow project-icon"></i>
+                        <h4>Stock Advisory Platform</h4>
+                        <p class="text-secondary">Stock advisory and portfolio management modules with client onboarding, portfolio allocation, and subscription management.</p>
+                        <div class="mt-auto"><span class="badge text-bg-secondary">Django</span> <span class="badge text-bg-secondary">PostgreSQL</span> <span class="badge text-bg-secondary">Celery</span></div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 project-card">
+                    <div class="card-body d-flex flex-column">
+                        <i class="bi bi-display project-icon"></i>
+                        <h4>Employee Monitoring System</h4>
+                        <p class="text-secondary">Real-time employee monitoring backend with screenshot tracking, active window monitoring, and activity analytics.</p>
+                        <div class="mt-auto"><span class="badge text-bg-secondary">Python</span> <span class="badge text-bg-secondary">Django</span> <span class="badge text-bg-secondary">RBAC</span></div>
+                    </div>
+                </div>
+            </div>
 
-  </main><!----main close-->
- 
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 project-card">
+                    <div class="card-body d-flex flex-column">
+                        <i class="bi bi-file-earmark-spreadsheet project-icon"></i>
+                        <h4>Mutual Fund Analytics</h4>
+                        <p class="text-secondary">Factsheet processing and NAV ingestion pipelines for extracting mutual fund fundamentals and historical analytics.</p>
+                        <div class="mt-auto"><span class="badge text-bg-secondary">Python</span> <span class="badge text-bg-secondary">Pandas</span> <span class="badge text-bg-secondary">AMFI</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 project-card">
+                    <div class="card-body d-flex flex-column">
+                        <i class="bi bi-robot project-icon"></i>
+                        <h4>AI Expense Tracker</h4>
+                        <p class="text-secondary">Personal finance application using FastAPI, PostgreSQL, and MCP for natural-language expense tracking and summaries.</p>
+                        <div class="mt-auto"><span class="badge text-bg-secondary">FastAPI</span> <span class="badge text-bg-secondary">PostgreSQL</span> <span class="badge text-bg-secondary">MCP</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 project-card">
+                    <div class="card-body d-flex flex-column">
+                        <i class="bi bi-cpu project-icon"></i>
+                        <h4>AI / GenAI Applications</h4>
+                        <p class="text-secondary">Exploring AI applications using LangChain, LangGraph, RAG pipelines, and Hugging Face models.</p>
+                        <div class="mt-auto"><span class="badge text-bg-secondary">LangChain</span> <span class="badge text-bg-secondary">LangGraph</span> <span class="badge text-bg-secondary">RAG</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="py-5 section-dark">
+    <div class="container py-4">
+        <div class="section-heading mb-5">
+            <span>04. TECHNICAL SKILLS</span>
+            <h2>My technical <span class="text-primary">toolkit.</span></h2>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4"><div class="card h-100"><div class="card-body"><i class="bi bi-code-square fs-2 text-primary"></i><h5 class="mt-3">Languages</h5><p class="text-secondary mb-0">Python, SQL, JavaScript</p></div></div></div>
+            <div class="col-md-6 col-lg-4"><div class="card h-100"><div class="card-body"><i class="bi bi-server fs-2 text-primary"></i><h5 class="mt-3">Backend Frameworks</h5><p class="text-secondary mb-0">Django, Django REST Framework, FastAPI</p></div></div></div>
+            <div class="col-md-6 col-lg-4"><div class="card h-100"><div class="card-body"><i class="bi bi-database fs-2 text-primary"></i><h5 class="mt-3">Databases & Caching</h5><p class="text-secondary mb-0">PostgreSQL, SQLite, Redis</p></div></div></div>
+            <div class="col-md-6 col-lg-4"><div class="card h-100"><div class="card-body"><i class="bi bi-braces fs-2 text-primary"></i><h5 class="mt-3">AI / GenAI</h5><p class="text-secondary mb-0">LangChain, LangGraph, RAG, MCP</p></div></div></div>
+            <div class="col-md-6 col-lg-4"><div class="card h-100"><div class="card-body"><i class="bi bi-tools fs-2 text-primary"></i><h5 class="mt-3">Tools & Libraries</h5><p class="text-secondary mb-0">Pandas, NumPy, Celery, Git, GitLab, Postman</p></div></div></div>
+            <div class="col-md-6 col-lg-4"><div class="card h-100"><div class="card-body"><i class="bi bi-diagram-3 fs-2 text-primary"></i><h5 class="mt-3">API Development</h5><p class="text-secondary mb-0">REST APIs, RBAC, ORM Optimization</p></div></div></div>
+        </div>
+    </div>
+</section>
+
+<section id="education" class="py-5">
+    <div class="container py-4">
+        <div class="section-heading mb-5">
+            <span>05. EDUCATION</span>
+            <h2>My academic <span class="text-primary">background.</span></h2>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card h-100"><div class="card-body p-4">
+                    <i class="bi bi-mortarboard-fill fs-2 text-primary"></i>
+                    <p class="text-secondary mt-3 mb-2">2023 – 2025</p>
+                    <h4>Master of Computer Applications</h4>
+                    <p class="text-primary">Zeal Institute of Business Administration, Computer Application and Research, Pune</p>
+                    <p class="text-secondary mb-0">CGPA: 7.83</p>
+                </div></div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100"><div class="card-body p-4">
+                    <i class="bi bi-mortarboard-fill fs-2 text-primary"></i>
+                    <p class="text-secondary mt-3 mb-2">2020 – 2023</p>
+                    <h4>Bachelor of Computer Applications</h4>
+                    <p class="text-primary">MVP's CMCS College, Nashik</p>
+                    <p class="text-secondary mb-0">Affiliated to Savitribai Phule Pune University</p>
+                </div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="py-5 section-dark">
+    <div class="container py-4">
+        <div class="text-center mb-5">
+            <p class="text-primary fw-semibold">06. CONTACT</p>
+            <h2 class="fw-bold">Let's build something <span class="text-primary">great.</span></h2>
+            <p class="text-secondary mx-auto contact-text">
+                I'm interested in backend development, fintech, and AI engineering opportunities.
+                Feel free to connect with me.
+            </p>
+        </div>
+
+        <div class="text-center">
+            <a href="mailto:khairnarakshay1722@gmail.com" class="btn btn-primary btn-lg me-2 mb-3">
+                <i class="bi bi-envelope"></i> Send Email
+            </a>
+            <a href="https://github.com/khairnarakshay" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-lg mb-3">
+                <i class="bi bi-github"></i> GitHub
+            </a>
+        </div>
+
+        <div class="text-center mt-4">
+            <div class="badge-base LI-profile-badge"
+                 data-locale="en_US"
+                 data-size="medium"
+                 data-theme="dark"
+                 data-type="HORIZONTAL"
+                 data-vanity="akshaykhairnar-backend-developer"
+                 data-version="v1">
+                <a class="badge-base__link LI-simple-link"
+                   href="https://in.linkedin.com/in/akshaykhairnar-backend-developer?trk=profile-badge">
+                    Akshay Khairnar
+                </a>
+            </div>
+        </div>
+
+        <p class="text-center text-secondary mt-4 mb-0">
+            <i class="bi bi-geo-alt"></i> Nashik, Maharashtra, India
+        </p>
+    </div>
+</section>
+
+<footer class="py-4 border-top">
+    <div class="container text-center">
+        <p class="text-secondary mb-2">Designed & built by <span class="text-primary">Akshay Khairnar</span></p>
+        <p class="small text-secondary mb-0">© <span id="currentYear"></span> Akshay Khairnar. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+<script src="script.js"></script>
 </body>
 </html>
